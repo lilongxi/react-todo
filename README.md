@@ -34,6 +34,7 @@ create-react-app my-app --scripts-version custom-react-scripts
 然后启动项目<code>REACT_APP_DECORATORS=true npm start</code>，完美的开启了修饰器！
 
 #### 关于项目
+增删改查<br />
 没有后台，数据是mock出来的并用了localstorge存储！<br />
 下载后<code>REACT_APP_DECORATORS=true npm start</code>就可以启动！
 
