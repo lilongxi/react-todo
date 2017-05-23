@@ -1,0 +1,131 @@
+$border:1px solid red;
+$textAlign:center;
+$color:#fff;
+$fontSize:14px;
+$fontFamily:'微软雅黑';
+$textLeft:left;
+
+@mixin Padding($pad...){
+    padding: $pad;
+}
+
+@mixin Margin($mar...){
+    margin: $mar;
+}
+
+.App {
+  &-header {
+    background-color: #222;
+    height: 160px;
+//  padding: 40px 0;
+    @include Padding(20px 0);
+    color: $color;
+    text-align: $textAlign;
+    cursor: wait;
+  }
+  
+  &-inner{
+      max-width: 90%;
+      @include Margin(20px 5% 0px);
+  }
+  
+  &-display{
+//    border:$border;
+      font-size: $fontSize;
+      font-family: $fontFamily;
+      @include Padding(10px 0);
+  }
+  &-display span:hover{
+      color: #E68484;
+      transition: all .5s;
+      cursor: pointer;
+  }
+  &-body{
+      text-align: $textAlign;
+      @include Padding(20px 0);
+  }
+  &-action{
+      text-align:$textAlign;
+       @include Padding(20px 0);
+  }
+  &-card{
+      max-width: 340px;
+      text-align:$textLeft;
+      @include Margin(7.5px auto);
+      cursor: pointer;
+  }
+  &-card-fail{
+      width: 360px;
+      text-align:$textLeft;
+      @include Margin(7.5px auto);
+      cursor: pointer;
+      opacity: .5;
+  }
+  
+  &-Pagination{
+       @include Padding(20px 0);
+       text-align: $textAlign;
+  }
+  &-publish{
+      color:rgb(0,168,84);
+  }
+  &-finish{
+      color: #E68484;
+  }
+  &-status{
+      float: right;
+  }
+  &-actions span{
+      float: right;
+      @include Margin(10px 0 10px 10px)
+  }
+  
+  &-disc{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+  }
+  
+  &-animate{
+     -webkit-animation:fadeInRight .75s linear 1 forwards;
+  }
+  &-additem{
+      @include Margin(20px 0)
+  }
+  &-link{
+      text-decoration: none;
+  }
+}
+
+.fadeInRight{
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}

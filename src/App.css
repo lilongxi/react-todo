@@ -1,0 +1,98 @@
+@charset "UTF-8";
+.App-header {
+  background-color: #222;
+  height: 160px;
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+  cursor: wait; }
+
+.App-inner {
+  max-width: 90%;
+  margin: 20px 5% 0px; }
+
+.App-display {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  padding: 10px 0; }
+
+.App-display span:hover {
+  color: #E68484;
+  transition: all .5s;
+  cursor: pointer; }
+
+.App-body {
+  text-align: center;
+  padding: 20px 0; }
+
+.App-action {
+  text-align: center;
+  padding: 20px 0; }
+
+.App-card {
+  max-width: 340px;
+  text-align: left;
+  margin: 7.5px auto;
+  cursor: pointer; }
+
+.App-card-fail {
+  width: 360px;
+  text-align: left;
+  margin: 7.5px auto;
+  cursor: pointer;
+  opacity: .5; }
+
+.App-Pagination {
+  padding: 20px 0;
+  text-align: center; }
+
+.App-publish {
+  color: #00a854; }
+
+.App-finish {
+  color: #E68484; }
+
+.App-status {
+  float: right; }
+
+.App-actions span {
+  float: right;
+  margin: 10px 0 10px 10px; }
+
+.App-disc {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.App-animate {
+  -webkit-animation: fadeInRight .75s linear 1 forwards; }
+
+.App-additem {
+  margin: 20px 0; }
+
+.App-link {
+  text-decoration: none; }
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
